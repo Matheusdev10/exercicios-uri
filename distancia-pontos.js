@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('stdin', 'utf8')
+var lines = input.split('\n')
+
+var A = lines.shift()
+var B = lines.shift()
+var C = A.split(' ')
+var D = B.split(' ')
+var E = Number(C[0])
+var F = Number(C[1])
+var G = Number(D[0])
+var H = Number(D[1])
+var distancia = Math.sqrt(Math.pow(G - E, 2) + Math.pow(H - F, 2))
+console.log(distancia.toFixed(4))
